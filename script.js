@@ -96,12 +96,14 @@ function typeEffect() {
     const currentWord = words[wordIndex];
 
     if (isDeleting) {
+
         typingText.textContent =
             currentWord.substring(0, charIndex - 1);
 
         charIndex--;
 
     } else {
+
         typingText.textContent =
             currentWord.substring(0, charIndex + 1);
 
